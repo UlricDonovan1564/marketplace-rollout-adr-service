@@ -1,0 +1,20 @@
+{
+  "name": "marketplace-rollout-adr-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx tests/marketplace_handoff.test.ts",
+    "demo": "node --import tsx src/marketplace_server.ts",
+    "schedule": "node --import tsx src/release_scheduler.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "@types/node": "^22.10.1"
+  }
+}
